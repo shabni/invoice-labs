@@ -37,8 +37,6 @@ ngOnInit() {
 
 onTableSignal(action) {
 
-  console.log(action,"++++++++++++++++++")
-
   if (action.action == 'addNew') {
     this.addForm()
   }
@@ -53,7 +51,7 @@ addForm() {
   const config =  {
     height: '80vh',
     width: '55%',
-    panelClass: ['animate__animated','animate__slideInLeft'],
+    panelClass: 'custom-modalbox',
     disableClose: false,
     position: dialogPosition,
     data: {}
