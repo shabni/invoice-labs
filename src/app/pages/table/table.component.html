@@ -1,0 +1,44 @@
+<div class="table-main" fxLayout="column" fxLayoutAlign="start start">
+   <div class="table-content">
+    <div class="top-bar" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="title">Invoices</div>
+        <div class="actions" fxLayout="row" fxLayoutAlign="end center">
+          <input class="search" type="text" placeholder="Search here.." name="searchText" id="search" value="">
+           <mat-icon style="color: #fd7848; cursor: pointer;" (click)="onSearchClick()">search</mat-icon>
+           <button class="btn-new" ><img src='/assets/images/add.svg' style="width: 14px; height: 14px;"> New</button>
+        </div>
+        <!-- <button class="action-btns" >Invoices</button> -->
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="table-card">
+        <table >
+          <tr class="table-head">
+            <td class="table-col table-col-first" width>Name</td>
+
+            <td class="table-col">Invoice</td>
+            <td class="table-col">Amount</td>
+            <td class="table-col">Year</td>
+            <td class="table-col table-col-last"></td>
+          </tr>
+          <ng-container *ngFor="let item of datbleData">
+            <tr>
+              <td  class="table-col table-col-first">
+                
+                  {{item.name}}
+                  
+              </td>
+              <td>{{item.invoice | number : '1.2-2'}}</td>
+              <td>{{item.amount}}</td>
+             
+              <td>{{item.year}}</td>
+              <td class="table-col table-col-last"><mat-icon>delete</mat-icon> </td>
+            </tr>
+          </ng-container>
+        </table>
+
+
+      </div>
+
+   </div>
+</div>

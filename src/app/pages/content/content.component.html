@@ -1,0 +1,20 @@
+<div class="content-main" fxLayout="column" fxLayoutAlign="start start">
+    <div class="content-header" fxLayout="row" fxLayoutAlign="center center">
+        <img src='/assets/images/logo-name.png' style="width: 180px; height: 45px;"> 
+
+        
+    </div>
+    <div class="menu">
+        <mat-icon (click)="cont.toggle()">menu</mat-icon>
+    </div>
+      
+    <div class="content-table">
+        <mat-expansion-panel #cont >
+
+            <side-bar></side-bar>
+        </mat-expansion-panel>
+
+        <content-table></content-table>
+    </div>
+
+</div>
