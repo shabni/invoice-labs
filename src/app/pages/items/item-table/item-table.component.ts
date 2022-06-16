@@ -43,24 +43,20 @@ onTableSignal(action) {
 }
 
 addForm() {
+    const dialogPosition = {
+      top: 30 + 'px',
+    };
 
-  const dialogPosition = {
-    top: 25 + 'px',
-  };
-
-  const config =  {
-    height: '80vh',
-    width: '55%',
-    panelClass: 'custom-modalbox',
-    disableClose: false,
-    position: dialogPosition,
-    data: {}
-}
-const dialogRef = this.dialog.open(ItemFormComponent , config);
-dialogRef.afterClosed().subscribe(result => {
-    
-});
-}
-
+    const config =  {
+      height: '53vh',
+      width: '36%',
+      panelClass: 'custom-modalbox',
+      disableClose: false,
+      position: dialogPosition,
+      data: {}
+    }
+    const dialogRef = this.dialog.open(ItemFormComponent , config);
+    dialogRef.afterClosed().subscribe(result => {});
+  }
 
 }
