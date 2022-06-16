@@ -14,9 +14,9 @@
             </div>
 
             <ng-container *ngFor="let item of dataList">
-                <div class="list-items" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+                <div class="list-items" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" [routerLink]="item.rout">
                     <mat-icon style="color: #fd7848;">receipt</mat-icon>
-                    <div>{{item}}</div>
+                    <div>{{item.title}}</div>
                 </div>
 
             </ng-container>

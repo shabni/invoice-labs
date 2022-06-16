@@ -13,6 +13,8 @@ import { GeneralPageComponent } from './pages/general-page/general-page.componen
 import { TableComponent } from './pages/general-table/general-table.component';
 import { ItemFormComponent } from './pages/items/item-form/item-form.component';
 import { ItemComponent } from './pages/items/item-table/item-table.component';
+import { ClientComponent } from './pages/clients/client-table/client-table.component';
+import { ClientFormComponent } from './pages/clients/client-form/client-form.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ItemComponent } from './pages/items/item-table/item-table.component';
     GeneralPageComponent,
     TableComponent,
     ItemComponent,
-    ItemFormComponent
+    ItemFormComponent,
+    ClientComponent,
+    ClientFormComponent
     
   ],
   imports: [
@@ -33,7 +37,8 @@ import { ItemComponent } from './pages/items/item-table/item-table.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

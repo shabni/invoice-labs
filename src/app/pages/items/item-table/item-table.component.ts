@@ -35,6 +35,7 @@ ngOnInit() {
 
   this.config['tableList']=this.datbleData
   this.config['columns']=this.columsList
+  this.config['titel'] = 'Items'
   
 }
 
