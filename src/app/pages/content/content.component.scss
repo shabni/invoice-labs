@@ -20,6 +20,7 @@
     .content-table {
         height: calc(100% - 85px);
         width: 100%;
+        overflow-y: auto;
     }
 
         @media screen and (max-width: 720px ) {
