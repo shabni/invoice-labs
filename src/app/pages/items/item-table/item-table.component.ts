@@ -16,14 +16,16 @@ export class ItemComponent {
   config:any ={}
 
   datbleData=[
-    {name:'Case',invoice:'2200',amount: 1, year:20},
-    {name:'CPU',invoice:'5000',amount: 2, year:20},
-    {name:'GPU',invoice:'3000',amount: 2,year:20},
-    {name:'Motherboard',invoice:'800',amount: 1,year:20},
-    {name:'RAM',invoice:'600',amount: 6, year:20},
-    {name:'Storage Device',invoice:'800',amount: 4, year:20},
-    {name:'Cooling',invoice:'900',amount: 2, year:20}
+    {Name:'Case',Invoice:'2200',Amount: 1, Year:20, Actions:['delete']},
+    {Name:'CPU',Invoice:'5000',Amount: 2, Year:20, Actions:['delete']},
+    {Name:'GPU',Invoice:'3000',Amount: 2,Year:20, Actions:['delete']},
+    {Name:'Motherboard',Invoice:'800',Amount: 1,Year:20, Actions:['delete']},
+    {Name:'RAM',Invoice:'600',Amount: 6, Year:20, Actions:['delete']},
+    {Name:'Storage Device',Invoice:'800',Amount: 4, Year:20, Actions:['delete']},
+    {Name:'Cooling',Invoice:'900',Amount: 2, Year:20, Actions:['delete']}
 ]
+
+columsList = ['Name', 'Invoice', 'Amount', 'Year','Actions']
 
 constructor(public dialog: MatDialog) {
 
@@ -32,6 +34,7 @@ constructor(public dialog: MatDialog) {
 ngOnInit() {
 
   this.config['tableList']=this.datbleData
+  this.config['columns']=this.columsList
   
 }
 

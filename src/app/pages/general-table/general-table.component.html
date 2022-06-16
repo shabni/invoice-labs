@@ -7,32 +7,29 @@
            <mat-icon style="color: #fd7848; cursor: pointer;" (click)="onSearchClick()">search</mat-icon>
            <button class="btn-new" (click)="onAddNew('addNew')"><img src='/assets/images/add.svg' style="width: 14px; height: 14px;"> New</button>
         </div>
-        <!-- <button class="action-btns" >Invoices</button> -->
     </div>
     <mat-divider></mat-divider>
 
     <div class="table-card">
         <table >
-          <tr class="table-head">
-            <td class="table-col table-col-first" width>Name</td>
 
-            <td class="table-col">Invoice</td>
-            <td class="table-col">Amount</td>
-            <td class="table-col">Year</td>
-            <td class="table-col table-col-last"></td>
+          <tr class="table-head">
+            <ng-container *ngFor="let col of config.columns; let isLast=last">
+              <td [ngClass]="{'table-col':isLast==false, 'table-col-last':isLast==true}">{{col}}</td>
+            </ng-container>
           </tr>
+
           <ng-container *ngFor="let item of config.tableList">
             <tr>
-              <td  class="table-col table-col-first">
-                
-                  {{item.name}}
-                  
-              </td>
-              <td>{{item.invoice | number : '1.2-2'}}</td>
-              <td>{{item.amount}}</td>
-             
-              <td>{{item.year}}</td>
-              <td class="table-col table-col-last"><mat-icon>delete</mat-icon> </td>
+
+              <ng-container *ngFor="let col of config.columns; let isLast=last">
+                <td *ngIf="col!='Actions'" [ngClass]="{'table-col':isLast==false, 'table-col-last':isLast==true}">{{item[col]}}</td>
+                <td *ngIf="col=='Actions'" [ngClass]="{'table-col':isLast==false, 'table-col-last':isLast==true}">
+                  <ng-container  *ngFor="let act of item[col];">
+                   <mat-icon style="color:#f44336">{{act}}</mat-icon>
+                  </ng-container>
+                </td>
+              </ng-container>
             </tr>
           </ng-container>
         </table>
