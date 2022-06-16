@@ -33,7 +33,7 @@ onSearchClick() {
 
 }
 
-onAddNew(action) {
+onAction(action) {
 
 this.tableActionSignal.emit({action:action})
 }

@@ -16,7 +16,7 @@ export class ItemComponent {
   config:any ={}
 
   datbleData=[
-    {Name:'Case',Invoice:'2200',Amount: 1, Year:20, Actions:['delete']},
+    {Name:'Case',Invoice:'2200',Amount: 1, Year:20, Actions:['delete','edit']},
     {Name:'CPU',Invoice:'5000',Amount: 2, Year:20, Actions:['delete']},
     {Name:'GPU',Invoice:'3000',Amount: 2,Year:20, Actions:['delete']},
     {Name:'Motherboard',Invoice:'800',Amount: 1,Year:20, Actions:['delete']},
@@ -40,9 +40,9 @@ ngOnInit() {
 
 onTableSignal(action) {
 
-  if (action.action == 'addNew') {
-    this.addForm()
-  }
+  if (action.action == 'addNew') {this.addForm()}
+  else if(action.action == 'delete') {console.log(action.action)}
+  else if(action.action == 'edit') {console.log(action.action)}
 }
 
 addForm() {
