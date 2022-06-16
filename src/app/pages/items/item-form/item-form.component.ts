@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, HostBinding } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 
 @Component({
@@ -11,9 +12,13 @@ import { FormControl } from '@angular/forms';
 })
 export class ItemFormComponent {
 
-ngOnInit() {
+  constructor(private dialogRef: MatDialogRef<ItemFormComponent>) {
 
-}
+  }
+
+  onCancl() {
+    this.dialogRef.close();
+  }
 
 
 
