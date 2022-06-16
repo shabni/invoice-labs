@@ -9,8 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './pages/main/main.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
-import { ContentComponent } from './pages/content/content.component';
 import { TableComponent } from './pages/table/table.component';
+import { GeneralPageComponent } from './pages/general-page/general-page.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { TableComponent } from './pages/table/table.component';
     AppComponent,
     MainComponent,
     SideBarComponent,
-    ContentComponent,
+    GeneralPageComponent,
     TableComponent
     
   ],

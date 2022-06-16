@@ -16,13 +16,13 @@ const expansion = trigger('expansion', [
 
 
 @Component({
-  selector: 'content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.scss'],
+  selector: 'general-page',
+  templateUrl: './general-page.component.html',
+  styleUrls: ['./general-page.component.scss'],
   animations: [expansion],
 
 })
-export class ContentComponent {
+export class GeneralPageComponent {
 
   show = true;
   toggleBody() {
