@@ -1,35 +1,60 @@
 <div class="form-container" fxLayout="column">
     <div class="header" fxLayout="row" fxLayoutAlign="start center">
-        <span style="font-weight: 500;">Add New Item</span>
+        <span style="font-weight: 500;">Customer Details</span>
     </div>
-    <div class="body" fxLayout="column"  fxLayoutGap="20px">
+    <div class="body" fxLayout="column"  fxLayoutGap="15px">
 
         <div class="input-double" fxLayout="row" fxLayoutAlign="space-between center">
             <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
-                <mat-label  class="lable-title">Title <span style="color: #ff7848;">*</span> </mat-label>
+                <mat-label  class="lable-title">Name <span style="color: #ff7848;">*</span> </mat-label>
                 <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
-                    <input class="input-content" type="text"placeholder="Type Description">
+                    <input class="input-content" type="text"placeholder="Type Name">
                 </div>
             </div>
 
             <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
-                <mat-label  class="lable-title">Unit Price <span style="color: #ff7848;">*</span></mat-label>
+                <mat-label  class="lable-title">Email</mat-label>
                 <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
-                    <input class="input-content" type="text"placeholder="Type Unit Cost">
+                    <input class="input-content" type="text"placeholder="Type Email">
                 </div>
             </div>
         </div>
 
-        <div class="input-container" fxLayout="column" fxLayoutAlign="start start">
-            <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
-                <mat-slide-toggle style="font-size: 12px;">Taxable</mat-slide-toggle>
-            </div>            
+        <div class="input-double" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
+                <mat-label  class="lable-title">Phone  </mat-label>
+                <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
+                    <input class="input-content" type="text"placeholder="Type Phone">
+                </div>
+            </div>
+
+            <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
+                <mat-label  class="lable-title">Mobile </mat-label>
+                <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
+                    <input class="input-content" type="text"placeholder="Type Mobile">
+                </div>
+            </div>
         </div>
 
-        <div class="input-container" fxLayout="column" fxLayoutAlign="start start">
-            <mat-label  class="lable-title">Additional Details</mat-label>
+        <div class="input-double" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
+                <mat-label  class="lable-title">Fax  </mat-label>
+                <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
+                    <input class="input-content" type="text"placeholder="Type Fax">
+                </div>
+            </div>
+
+            <div class="input-container" fxLayout="column" fxLayoutAlign="start start" fxFlex="49">
+                <mat-label  class="lable-title">Contact</mat-label>
+                <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
+                    <input class="input-content" type="text"placeholder="Type Contact">
+                </div>
+            </div>
+        </div>
+        <div class="input-container" fxLayout="column" fxLayoutAlign="start start" >
+            <mat-label  class="lable-title">Address</mat-label>
             <div fxLayout="row" class="input-section" fxLayoutAlign="space-between start">
-                <textarea class="input-content" type="text"placeholder="Type Unit Cost" style="min-width: 95%; min-height: 100px;"></textarea>
+                <input class="input-content" type="text"placeholder="Type Address" style="min-width: 95%;">
             </div>
         </div>
 

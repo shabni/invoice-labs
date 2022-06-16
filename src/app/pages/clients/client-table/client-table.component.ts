@@ -51,7 +51,7 @@ addForm() {
     };
 
     const config =  {
-      height: '53vh',
+      height: '55vh',
       width: '36%',
       panelClass: 'custom-modalbox',
       disableClose: false,
