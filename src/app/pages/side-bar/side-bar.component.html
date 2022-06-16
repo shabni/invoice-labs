@@ -8,13 +8,15 @@
     <div class="bar-body">
         <div class="list">
 
-            <div class="list-item-selected" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+            <!-- <div class="list-item-selected" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
                 <mat-icon style="color: #fd7848;">receipt</mat-icon>
                 <div>Invoices</div>
-            </div>
+            </div> -->
 
             <ng-container *ngFor="let item of dataList">
-                <div class="list-items" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" [routerLink]="item.rout">
+                <div [ngClass]="{'list-item-selected':item.title==selectedView, 'list-items':item.title!=selectedView}" FxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px"
+                 [routerLink]="item.rout"
+                 (click)="selectedView  = item.title">
                     <mat-icon style="color: #fd7848;">receipt</mat-icon>
                     <div>{{item.title}}</div>
                 </div>
