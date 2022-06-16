@@ -12,6 +12,7 @@ import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { GeneralPageComponent } from './pages/general-page/general-page.component';
 import { ItemComponent } from './pages/items/table/table.component';
 import { TableComponent } from './pages/general-table/general-table.component';
+import { ItemFormComponent } from './pages/items/item-form/item-form.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TableComponent } from './pages/general-table/general-table.component';
     SideBarComponent,
     GeneralPageComponent,
     TableComponent,
-    ItemComponent
+    ItemComponent,
+    ItemFormComponent
     
   ],
   imports: [

@@ -1,6 +1,8 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, HostBinding } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ItemFormComponent } from '../item-form/item-form.component';
 
 
 @Component({
@@ -23,15 +25,43 @@ export class ItemComponent {
     {name:'Cooling',invoice:'900',amount: 2, year:20}
 ]
 
+constructor(public dialog: MatDialog) {
+
+}
+
 ngOnInit() {
 
   this.config['tableList']=this.datbleData
   
 }
 
-onTableSignal(event) {
+onTableSignal(action) {
 
-  console.log(event,"++++++++++++++++++")
+  console.log(action,"++++++++++++++++++")
+
+  if (action.action == 'addNew') {
+    this.addForm()
+  }
+}
+
+addForm() {
+
+  const dialogPosition = {
+    top: 25 + 'px',
+  };
+
+  const config =  {
+    height: '80vh',
+    width: '55%',
+    panelClass: ['animate__animated','animate__slideInLeft'],
+    disableClose: false,
+    position: dialogPosition,
+    data: {}
+}
+const dialogRef = this.dialog.open(ItemFormComponent , config);
+dialogRef.afterClosed().subscribe(result => {
+    
+});
 }
 
 

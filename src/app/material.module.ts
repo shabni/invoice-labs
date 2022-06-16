@@ -8,6 +8,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSlideToggleModule,
     MatToolbarModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule,
   ],
   exports: [
     MatButtonModule,
@@ -26,7 +28,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSlideToggleModule,
     MatToolbarModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
     
   ],
   providers: [],
