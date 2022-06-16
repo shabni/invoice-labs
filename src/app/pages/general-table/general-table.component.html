@@ -5,7 +5,7 @@
         <div class="actions" fxLayout="row" fxLayoutAlign="end center">
           <input class="search" type="text" placeholder="Search here.." name="searchText" id="search" value="">
            <mat-icon style="color: #fd7848; cursor: pointer;" (click)="onSearchClick()">search</mat-icon>
-           <button class="btn-new" ><img src='/assets/images/add.svg' style="width: 14px; height: 14px;"> New</button>
+           <button class="btn-new" (click)="onAddNew('addNew')"><img src='/assets/images/add.svg' style="width: 14px; height: 14px;"> New</button>
         </div>
         <!-- <button class="action-btns" >Invoices</button> -->
     </div>
@@ -21,7 +21,7 @@
             <td class="table-col">Year</td>
             <td class="table-col table-col-last"></td>
           </tr>
-          <ng-container *ngFor="let item of datbleData">
+          <ng-container *ngFor="let item of config.tableList">
             <tr>
               <td  class="table-col table-col-first">
                 
