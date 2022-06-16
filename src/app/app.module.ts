@@ -10,9 +10,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './pages/main/main.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { GeneralPageComponent } from './pages/general-page/general-page.component';
-import { ItemComponent } from './pages/items/table/table.component';
 import { TableComponent } from './pages/general-table/general-table.component';
 import { ItemFormComponent } from './pages/items/item-form/item-form.component';
+import { ItemComponent } from './pages/items/item-table/item-table.component';
 
 
 @NgModule({

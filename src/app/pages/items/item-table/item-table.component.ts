@@ -7,8 +7,8 @@ import { ItemFormComponent } from '../item-form/item-form.component';
 
 @Component({
   selector: 'items',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss'],
+  templateUrl: './item-table.component.html',
+  styleUrls: ['./item-table.component.scss'],
 
 })
 export class ItemComponent {

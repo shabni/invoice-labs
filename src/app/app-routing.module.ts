@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ItemComponent } from './pages/items/table/table.component';
+import { ItemComponent } from './pages/items/item-table/item-table.component';
 
 const routes: Routes = [{ path: '', component: ItemComponent }];
 
