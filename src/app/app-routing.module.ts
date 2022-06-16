@@ -6,7 +6,9 @@ import { ItemComponent } from './pages/items/item-table/item-table.component';
 const routes: Routes = [
   { path: '', component: ItemComponent },
   { path: 'items', component: ItemComponent },
-  { path: 'clients', component: ClientComponent }];
+  { path: 'clients', component: ClientComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
