@@ -16,6 +16,7 @@ import { ItemComponent } from './pages/items/item-table/item-table.component';
 import { ClientComponent } from './pages/clients/client-table/client-table.component';
 import { ClientFormComponent } from './pages/clients/client-form/client-form.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { TemplateComponent } from './pages/app-template/app-template.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
     ItemFormComponent,
     ClientComponent,
     ClientFormComponent,
-    SettingsComponent
+    SettingsComponent,
+    TemplateComponent,
     
   ],
   imports: [

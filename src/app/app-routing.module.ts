@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TemplateComponent } from './pages/app-template/app-template.component';
 import { ClientComponent } from './pages/clients/client-table/client-table.component';
 import { ItemComponent } from './pages/items/item-table/item-table.component';
 import { SettingsComponent } from './pages/settings/settings.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'items', component: ItemComponent },
   { path: 'clients', component: ClientComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'templates', component: TemplateComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
