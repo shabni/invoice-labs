@@ -22,6 +22,18 @@
             height: 49px;
             border-top-left-radius: 20px;
 
+            .btn-new {
+                padding: 15px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #fff;
+                background-color: #eb7d46;
+                border: none;
+                border-radius: 0;
+                float: right;
+                cursor: pointer;
+            }
+
             .title {
                 font-size: 18px;
                 float: left;
@@ -38,33 +50,17 @@
           background-color: #f6f7fb;
           padding: 10px 0px;
 
+          .settings-panel {
+            // width: ;
+            height: 100%;
+            background-color: #eb7d46;
+          }
 
-        
-          .settings-card {
-
-                border: 0.01rem solid #eee;
-                    // width: calc(100% - 1.375rem - 1.375rem - 1px);
-                    padding: 10px;
-                    height: 90px;
-                    background-color: #fff;
-                    box-shadow: 0 0.125rem 0.3125rem #00000014;
-
-                    .top {
-                        width: 100%;
-                        height: 40px;
-                        font-size: 16px;
-                        color: #fd7e49;
-                    }
-
-                .title{
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #3a3938;
-                    word-spacing: 0.1rem;
-                    
-                  }
-
-            }
+          .pdf-panel {
+            height: 100%;
+            background-color: orangered;
+          }
+            
 
         }
 
