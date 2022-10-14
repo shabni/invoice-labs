@@ -7,10 +7,10 @@ import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
   { path: '', component: ItemComponent },
-  { path: 'items', component: ItemComponent },
-  { path: 'clients', component: ClientComponent },
-  { path: 'settings', component: SettingsComponent },
-  { path: 'templates', component: TemplateComponent },
+  { path: 'overview', component: ItemComponent },
+  { path: 'customers', component: ClientComponent },
+  { path: 'devices', component: SettingsComponent },
+  { path: 'alerts', component: SettingsComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

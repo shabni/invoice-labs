@@ -5,30 +5,17 @@
     height: 100%;
     // background-color: red;
     font-family: "Poppins",sans-serif;
+
+    .company-logo {
+        width: 100%;
+        height: 80px;
+    }
     
 
     .bar-header {
-        width: calc(100% - 20px);
-        height: 102px;
-        background-color: $primary;
-        padding: 24px 0 17px 20px;
-
-        .edit {
-            padding: 4px 4px 4px 11px;
-            width: 63px;
-            font-size: 14px;
-            font-weight: 400;
-            color: #fd7e49;
-            background-color: #fff;
-            border: none;
-            border-top-left-radius: 12px;
-            border-bottom-left-radius: 12px;
-            float: right;
-        }
-
-        .edit:hover {
-            background-color: #fcc9b0;
-        }
+        width: 100%;
+        height: 170px;
+        background-color: #1b4383;
        
         .business-name {
             font-size: 14px;
@@ -43,7 +30,7 @@
         }
 
         .business-email {
-            font-size: 11px;
+            font-size: 12px;
             color: rgb(229, 229, 229);
         }
         
@@ -51,17 +38,15 @@
 
     .bar-body {
 
-        height: calc(100% - 50px - 102px);
-        padding-left: 12px;
+        height: calc(100% - 50px - 170px - 80px);
         padding-top: 12px;
         padding-bottom: 10px;
         overflow-y: auto;
         overflow-x: hidden;
-        // background-color: red;
-        width: calc(100% - 12px);
+        background-color: #1b4383;
+        width: 100%;
         .list {
 
-            margin-right: 16px;
      
 
             .list-items {
@@ -69,24 +54,24 @@
                 justify-content: left;
                 align-items: center;
                 text-decoration: none;
-                color: #828282;
+                color: #a4b4cd;
                 cursor: pointer;
                 font-size: 1rem;
                 font-weight: 400;
-                padding: 12px 16px;
                 white-space: nowrap;
                 border-radius: 0.25rem;
+                height: 70px;
             
             }
 
             .list-item-selected {
-                background-color: #ffe5da;
-                border-radius: 0.25rem;
-                font-weight: 600;
+                background-color: #183c76;
+                font-weight: 500;
                 font-size: 1rem;
-                color: #fd7e49;
+                color: white;
                 cursor: pointer;
-                padding: 12px 16px;
+                height: 70px;
+                border-left: 3px solid white;
             }
         }
     }
@@ -95,17 +80,16 @@
 
     .bar-footer {
         width:100%;
-        background: #fd7848;
-        // padding: 10px 0 10px 26px;
         bottom: 0;
         color: #fff!important;
-        height: 50px;
-        padding-left: 26px;
+        height: 70px;
+        background-color: #1b4383;
 
         .logout{
             font-size: 16px;
-            color: #fff;
+            color: #a4b4cd;
             font-weight: 400;
+            width: 50%;
         }
     }
 
