@@ -8,28 +8,20 @@
     <div class="bar-body">
         <div class="list">
 
-            <!-- <div class="list-item-selected" xLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
-                <mat-icon style="color: #fd7848;">receipt</mat-icon>
-                <div>Invoices</div>
-            </div> -->
-
             <ng-container *ngFor="let item of dataList">
-                <div [ngClass]="{'list-item-selected':item.title==selectedView, 'list-items':item.title!=selectedView}" FxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px"
+                <div [ngClass]="{'list-item-selected':item.title==selectedView, 'list-items':item.title!=selectedView}" FxLayout="row" fxLayoutAlign="center center" fxLayoutGap="8px"
                  [routerLink]="item.rout"
                  (click)="selectedView  = item.title">
-                    <mat-icon style="color: #fd7848;">receipt</mat-icon>
-                    <div>{{item.title}}</div>
+                    <div style="width: 50%;" FxLayout="row" fxLayoutAlign="start center">{{item.title}}</div>
                 </div>
 
             </ng-container>
 
         </div>
     </div>
-    <div class="bar-footer" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+    <div class="bar-footer" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="8px">
 
-        <img src='/assets/images/logout.svg' style="width: 20px; height: 20px; ">
-        <div class="logout">Logout</div>
-        <!-- <button mat-raised-button color="primary">Log Out</button> -->
+        <div class="logout" FxLayout="row" fxLayoutAlign="start center">Logout</div>
 
     </div>
 

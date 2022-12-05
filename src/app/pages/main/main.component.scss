@@ -6,12 +6,12 @@
 
     .side-bar {
         height: 100%;
-        width: 260px;
+        width: 210px;
     }
 
     .content {
         height: 100%;
-        width: calc(100% - 260px);
+        width: calc(100% - 210px);
     }
 
     @media screen and (max-width: 720px ) {
