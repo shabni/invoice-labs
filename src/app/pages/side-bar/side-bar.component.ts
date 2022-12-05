@@ -8,11 +8,11 @@ import { FormControl } from '@angular/forms';
 })
 export class SideBarComponent {
 
-  selectedView = 'Items'
+  selectedView = 'Dashboard'
 
-  dataList = [{title:'Invoice', rout:'invoices'}, {title:'Estimate', rout:'extimates'},{title:'Clients', rout:'clients'},{title:'Items', rout:'items'},{title:'Reports', rout:'reports'},
-  {title:'business Details', rout:'business-details'},{title:'Region', rout:'regions'},{title:'Choose Template', rout:'templates'},{title:'Upgrade Subscription', rout:'subscription'},
-  {title:'Settings', rout:'settings'},{title:'Contact Us', rout:'contact'},
+  dataList = [
+    {title:'Dashboard', rout:'dashboard'},
+    {title:'Clients', rout:'clients'},
   ]
 
 }
